@@ -17,7 +17,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment-7-tasifacuj.git;protocol
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "30215904ede51cf3395aa673d5679e23c6fd25d7"
+SRCREV = "1643318d04da5b6948474dffaa88ed6aded54933"
 
 S = "${WORKDIR}/git/scull"
 

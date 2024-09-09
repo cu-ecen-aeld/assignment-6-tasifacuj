@@ -15,7 +15,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignment-7-tasifacuj.git;protocol
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "30215904ede51cf3395aa673d5679e23c6fd25d7"
+SRCREV = "1643318d04da5b6948474dffaa88ed6aded54933"
 
 S = "${WORKDIR}/git/misc-modules"
 
@@ -42,5 +42,5 @@ do_install () {
 
     install -d ${D}${base_libdir}/modules/${KERNEL_VERSION}/extra/
     install -m 0755 ${S}/faulty.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/extra/faulty.ko
-    install -m 0755 ${S}/hello.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/
+    install -m 0755 ${S}/hello.ko ${D}${base_libdir}/modules/${KERNEL_VERSION}/hello.ko
 }
